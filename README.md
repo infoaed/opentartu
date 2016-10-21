@@ -1,12 +1,12 @@
 # Open Tartu (for Smart Citizens)
 
-Tartu is presenting itself as a Smart City, but unfortunately not very Open City. There is no Open Data directory in Tartu[1], however some of the data can be scraped. Document registry provides data about the meetings, protocols, drafts for municipal acts and votes about them in commissions, government and council etc. They are provided with some metadata of varying quality, but with some effort it can be rendered quite usable.
+Tartu is presenting itself as a Smart City, but unfortunately it's not very Open City. There is no Open Data directory in Tartu[1], but there is still some data that can be scraped. Document registry provides data about meetings, protocols, drafts for municipal acts and votes about them in commissions, government and council etc. They are provided with some metadata of varying quality, but with some effort it can be rendered quite usable.
 
 We can make a case for Open Tartu with:
 
 1. Converting the scraped documents to one of the standard formats used to present documents produced in decision processes and link them to roles and phases of decision process, highlight the amounts of money and political parties involved etc;
 
-2. Displaying parts of process visually in order to avoid headache from reading too much bureaucratic gibberish and make it easy to grasp what's going on in city, use different criteria for displaying the information, different levels of zoom etc;
+2. Displaying parts of process visually in order to avoid headache from reading too much bureaucratic gibberish and make it easy to grasp what's going on in city, use different criteria for displaying the information, different levels of zoom, word clouds etc;
 
 3. Showcasing an e-democracy portal to comment on the documents in different phases and give citizens ability to vote on the same topics city government, commissions and council does vote on.
 
