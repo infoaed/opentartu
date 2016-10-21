@@ -12,4 +12,4 @@ We can make a case for Open Tartu with:
 
 This is something that the city could do and even has admitted, that should be done, but won't do if not given an example of how this kind of Open Tartu would look like.
 
-This is our opportunity to digivolve **Smart City of Tartu** to **Smart and Open City of Tartu** and make it the flagship of Open Governance and e-Democracy in Estonia (not to mention that if this actually works, this will be international news).
+Technology without openness leads to technological totalitarianism. This is our opportunity to stop **Smart City of Tartu** from turning into nightmare of technocratic control and digivolve it into a **Smart and Open City of Tartu** and make it the flagship of Open Governance and e-Democracy in Estonia (not to mention that if this actually works, this will be international news).
