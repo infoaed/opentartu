@@ -10,6 +10,6 @@ We can make a case for Open Tartu with:
 
 3. Showcase an e-democracy portal to comment on the documents in different phases and give citizens ability to vote on the same topics city government, commissions and council does vote on.
 
-This is something that the city could do and even has admitted, that should be done, but won't do if not given an example of how this kind of Open Tartu would look like.
+This is something that the city could do and even has admitted, that should be done, but won't do if not given an example of how this kind of Open Tartu would look like in practise.
 
 Technology without openness leads to technological totalitarianism. This is our opportunity to stop **Smart City of Tartu** from turning into nightmare of technocratic control and digivolve it into a **Smart and Open City of Tartu** and make it the flagship of Open Governance and e-Democracy in Estonia (not to mention that if this actually works, this will be international news).
