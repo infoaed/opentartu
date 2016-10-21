@@ -14,5 +14,5 @@ This is something that the city could do and even has admitted, that should be d
 
 Technology without openness leads to technological totalitarianism. This is our opportunity to stop **Smart City of Tartu** from turning into nightmare of technocratic control and digivolve it into a **Smart and Open City of Tartu** and make it the flagship of Open Governance and e-Democracy in Estonia (not to mention that if this actually works, this will be international news).
 
-[1] http://www.opendata.ee/2016-03-14/tartu-linna-andmekogude-avamine/
-[2] http://info.raad.tartu.ee/uurimused.nsf/236552664d75f727c2256c4b00207453/49b98b59fa252e65c2257e77003ceed3/$FILE/TARTUWEB%20Tartu%20linna%20kodulehe%20veebistrateegia.pdf
+[1]: http://www.opendata.ee/2016-03-14/tartu-linna-andmekogude-avamine/
+[2]: http://info.raad.tartu.ee/uurimused.nsf/236552664d75f727c2256c4b00207453/49b98b59fa252e65c2257e77003ceed3/$FILE/TARTUWEB%20Tartu%20linna%20kodulehe%20veebistrateegia.pdf
