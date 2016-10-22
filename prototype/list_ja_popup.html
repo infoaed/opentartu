@@ -11,8 +11,42 @@
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <style>
+  .kirje {
+    margin-bottom: 0;
+  }
+  .aktuaalne {
+    background-color: lightblue;
+  }
 
-  <title>Bootstrap 101 Template</title>
+  .kuupaev {
+    float: left;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    margin-right: 1em;
+    display: visible;
+  }
+  .tag {
+    float: right;
+    display: visible;
+  }    
+  .nimi {
+    float: right;
+    display: visible;
+  }
+  .raha {
+    float: right;
+    display: none;
+  }
+  .seadus {
+    float: right;
+    display: none;
+  }
+  </style>
+
+
+
+  <title>Open Tartu (for Smart Citizens)</title>
 
   <!-- Bootstrap -->
 
@@ -46,42 +80,85 @@
         </div>
       </div>
 
-
-
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-info" data-toggle="modal" data-target="#myModal">
-          <span class="badge">Kalle Kullerkupp</span>
-          <h4 class="list-group-item-heading">Haridusosakond</h4>
-          <p class="list-group-item-text">Oluline uuring sellest, kui palju on alushariduses väljalangejaid.</p>
-        </a> 
-        <a href="#" class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#myModal">
-          <span class="badge">#supilinn</span><span class="badge">#algharidus</span>
-          <h4 class="list-group-item-heading">Linnavalitsuse eelnõu</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal">
-          <h4 class="list-group-item-heading">Hariduskomisjoni arutelu</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal">
-          <h4 class="list-group-item-heading">Sotsiaalkomisjoni arutelu</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal">
-          <h4 class="list-group-item-heading">Linnavalitsuse muudatusettepanekud</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal">
-          <h4 class="list-group-item-heading">Volikogu arutelu</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal">
-          <h4 class="list-group-item-heading">Volikogu otsus</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-          <a href="#" class="btn btn-default" role="button">Hääleta</a></p>
-        </a>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input id="kuupaev_cb" type="checkbox" autocomplete="off" checked>Kuupäev
+        </label>
+        <label class="btn btn-primary active">
+          <input id="nimi_cb" type="checkbox" autocomplete="off" checked>Isik
+        </label>
+        <label class="btn btn-primary active">
+          <input id="tag_cb" type="checkbox" autocomplete="off" checked>Silt
+        </label>
+        <label class="btn btn-primary">
+          <input id="raha_cb" type="checkbox" autocomplete="off">Raha
+        </label>
+        <label class="btn btn-primary">
+          <input id="seadus_cb" type="checkbox" autocomplete="off">Seadus
+        </label>
       </div>
 
+
+      <div class="panel kirje">
+         <div class="panel-heading" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+            <h4 class="list-item">Haridusosakond<span class="label label-info kuupaev">24.<br>sept<br>2016</span><span class="badge nimi">Kalle Kullerkupp</span></h4>
+            <p>Oluline uuring sellest, kui palju on alushariduses väljalangejaid.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample1">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+      </div>
+
+      <div class="panel kirje">
+         <div class="panel-heading aktuaalne" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            <h4 class="list-item">Linnavalitsuse eelnõu<span class="label label-info kuupaev">28.<br>sept<br>2016</span><span class="badge tag">#suplinn</span><span class="badge tag">#alusharidus</span></h4>
+            <p>Algatame eelnõu Supilinna kogukonnakooli teemal.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample2">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+      </div>
+
+      <div class="panel kirje">
+         <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+            <h4 class="list-item">Hariduskomisjoni arutelu<span class="label label-info kuupaev">3.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge seadus">§ 58</span></h4>
+            <p>Arutelu pole vee toimunud.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample3">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+      </div>
+
+      <div class="panel kirje">
+         <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+            <h4 class="list-item">Sotsiaalkomisjoni arutelu<span class="label label-info kuupaev">5.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge raha">100 000 €</span></h4>
+            <p>Arutelu pole vee toimunud.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample4">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+      </div>
+
+      <div class="panel kirje">
+         <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+            <h4 class="list-item">Volikogu arutelu<span class="label label-info kuupaev">22.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span></h4>
+            <p>Arutelu pole vee toimunud.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample5">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+      </div>
+
+      <div class="panel kirje">
+         <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+            <h4 class="list-item">Volikogu otsus<span class="label label-info kuupaev">22.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge nimi">Artur Pealik</span></h4>
+            <p>Volikogu hääletab.</p>
+         </div>
+         <div class="collapse panel-body" id="collapseExample6">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <button type="button" class="btn btn-default navbar-btn">Hääleta</button>
+         </div>
+      </div>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -90,5 +167,71 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
+
+  <script>
+  $("#tag_cb").change(function() {
+      if(this.checked) {
+        $(".tag").each(function( index ) {
+          $( this ).show();
+        });
+      } else {
+        $(".tag").each(function( index ) {
+          $( this ).hide();
+        });
+      }
+  });
+
+  $("#nimi_cb").change(function() {
+      if(this.checked) {
+        $(".nimi").each(function( index ) {
+          $( this ).show();
+        });
+      } else {
+        $(".nimi").each(function( index ) {
+          $( this ).hide();
+        });
+      }
+  });
+
+  $("#raha_cb").change(function() {
+      if(this.checked) {
+        $(".raha").each(function( index ) {
+          $( this ).show();
+        });
+      } else {
+        $(".raha").each(function( index ) {
+          $( this ).hide();
+        });
+      }
+  });
+
+  $("#seadus_cb").change(function() {
+      if(this.checked) {
+        $(".seadus").each(function( index ) {
+          $( this ).show();
+        });
+      } else {
+        $(".seadus").each(function( index ) {
+          $( this ).hide();
+        });
+      }
+  });
+
+  $("#kuupaev_cb").change(function() {
+      if(this.checked) {
+        $(".kuupaev").each(function( index ) {
+          $( this ).show();
+        });
+      } else {
+        $(".kuupaev").each(function( index ) {
+          $( this ).hide();
+        });
+      }
+  });
+  </script>
+
+
     </body>
     </html>
+
