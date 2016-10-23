@@ -52,7 +52,7 @@ if len(sys.argv) >= 2:
 		data_file = f.readlines()
 
 output=sys.argv[1].split(".")[0]+"-tags.csv"
-fw = codecs.open(output,'w','utf-8')
+fw = codecs.open("ekstra/"+output,'w','utf-8')
 
 print output
 
