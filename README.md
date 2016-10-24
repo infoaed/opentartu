@@ -1,6 +1,17 @@
 # Open Tartu (for Smart Citizens)
 
+This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21-23 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/).
+
+In a nutshell, this is a project to scrape information for Tartu City document registry and present it in a usable manner for citizens as well as city officials themselves. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process itself, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
+
+Check out the test application: https://infoaed.github.io/start.html
+Scraped data: https://github.com/infoaed/opentartu/tree/master/kraabe
+
+## Original pitch
+
 Tartu is presenting itself as a Smart City, but unfortunately it's not very Open City. There is no Open Data directory in Tartu[1], but there is still some data that can be scraped. Document registry provides data about meetings, protocols, drafts for municipal acts and votes about them in commissions, government and council etc. They are provided with some metadata of varying quality, but with some effort it can be rendered quite usable.
+
+[![Garage48 Open & Big Data hackathon pitch](https://github.com/infoaed/opentartu/blob/master/disain/opentartu-pic.jpg)](https://twitter.com/trtram/status/789464811302248448)
 
 We can make a case for Open Tartu with:
 
