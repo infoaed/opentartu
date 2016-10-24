@@ -6,6 +6,8 @@ In a nutshell, this is a project to scrape information for Tartu City document r
 
 [Check out the test application](https://infoaed.github.io/start.html) or [dig into data the scripts scraped for us](https://github.com/infoaed/opentartu/tree/master/kraabe).
 
+Or see our [final presentation at the hackathon](http://tehnika.postimees.ee/3883093/vaata-uuesti-garage48-open-big-data-2016-arendusnadalavahetuse-finaal) (starts ~52:15).
+
 ## Original pitch
 
 Tartu is presenting itself as a Smart City, but unfortunately it's not very Open City. There is no Open Data directory in Tartu[1], but there is still some data that can be scraped. Document registry provides data about meetings, protocols, drafts for municipal acts and votes about them in commissions, government and council etc. They are provided with some metadata of varying quality, but with some effort it can be rendered quite usable.
