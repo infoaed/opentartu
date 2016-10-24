@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,23 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
   <style>
   .kirje {
     margin-bottom: 0;
+    border-bottom:1px solid #ccc;
+    position: relative;
+  }
+  .kirje.minevik{
+    color:#ccc;
+  }
+  .kirje i.fa-long-arrow-down{
+    font-size:2em;
+    position: absolute;
+    right:7em;
+    top:-0.35em;
+    color:#ccc;
   }
   .aktuaalne {
     background-color: lightblue;
@@ -67,14 +81,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <h4 class="modal-title" id="myModalLabel">Siia tulevad isiku detailid</h4>
             </div>
             <div class="modal-body">
-              ...
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Urmas_klaas_hansap%C3%A4eval.jpg/220px-Urmas_klaas_hansap%C3%A4eval.jpg">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -100,8 +113,9 @@
 
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-            <h4 class="list-item">Haridusosakond<span class="label label-info kuupaev">24.<br>sept<br>2016</span><span class="badge nimi">Kalle Kullerkupp</span></h4>
+            <h4 class="list-item">Haridusosakond<span class="label label-info kuupaev">24.<br>sept<br>2016</span><span data-toggle="modal" data-target="#myModal" class="badge nimi">Kalle Kullerkupp</span></h4>
             <p>Oluline uuring sellest, kui palju on alushariduses väljalangejaid.</p>
          </div>
          <div class="collapse panel-body" id="collapseExample1">
@@ -110,6 +124,7 @@
       </div>
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading aktuaalne" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
             <h4 class="list-item">Linnavalitsuse eelnõu<span class="label label-info kuupaev">28.<br>sept<br>2016</span><span class="badge tag">#suplinn</span><span class="badge tag">#alusharidus</span></h4>
             <p>Algatame eelnõu Supilinna kogukonnakooli teemal.</p>
@@ -120,6 +135,7 @@
       </div>
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
             <h4 class="list-item">Hariduskomisjoni arutelu<span class="label label-info kuupaev">3.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge seadus">§ 58</span></h4>
             <p>Arutelu pole vee toimunud.</p>
@@ -130,6 +146,7 @@
       </div>
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
             <h4 class="list-item">Sotsiaalkomisjoni arutelu<span class="label label-info kuupaev">5.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge raha">100 000 €</span></h4>
             <p>Arutelu pole vee toimunud.</p>
@@ -140,6 +157,7 @@
       </div>
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
             <h4 class="list-item">Volikogu arutelu<span class="label label-info kuupaev">22.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span></h4>
             <p>Arutelu pole vee toimunud.</p>
@@ -150,6 +168,7 @@
       </div>
 
       <div class="panel kirje">
+        <i class="fa fa-long-arrow-down"></i>
          <div class="panel-heading tulevik" role="button" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
             <h4 class="list-item">Volikogu otsus<span class="label label-info kuupaev">22.<br>okt<br>2016</span><span class="badge nimi">Viktor Asjalik</span><span class="badge nimi">Artur Pealik</span></h4>
             <p>Volikogu hääletab.</p>
@@ -158,7 +177,7 @@
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             <button type="button" class="btn btn-default navbar-btn">Hääleta</button>
          </div>
-      </div>
+      </div>-->
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -229,7 +248,35 @@
         });
       }
   });
-  </script>
+
+  $(".nimi").click(function(e){
+    e.stopPropagation();
+    $("#myModal").modal('show');
+  })
+    </script>
+
+<script id="dsq-count-scr" src="//open-tartu-for-smart-citizens.disqus.com/count.js" async></script>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+  this.page.url = "http://tartuvabakond.dorpatensis.ee/index.py?id=";
+  this.page.identifier = "Open Tartu (for Smart Citizens)";
+  };
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//open-tartu-for-smart-citizens.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 </body>
