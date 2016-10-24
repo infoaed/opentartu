@@ -2,7 +2,7 @@
 
 This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21-23 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/).
 
-In a nutshell, this is a project to scrape information for Tartu City document registry and present it in a usable manner for citizens as well as city officials themselves. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process itself, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
+In a nutshell, this is a project to scrape information from Tartu City document registry and present it in a usable manner for citizens as well as city officials themselves. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process itself, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
 
 [Check out the test application](https://infoaed.github.io/start.html) or [dig into data the scripts scraped for us](https://github.com/infoaed/opentartu/tree/master/kraabe).
 
