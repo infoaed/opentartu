@@ -48,28 +48,36 @@ def get_freq(data):
 	return sorted(words.items(), key=lambda x:x[1], reverse=True)
 
 if len(sys.argv) >= 2:
-	with open(sys.argv[1]) as f:
-		data_file = f.readlines()
 
-output=sys.argv[1].split(".")[0]+"-tags.csv"
-fw = codecs.open("ekstra/"+output,'w','utf-8')
+	fw = codecs.open("tags.csv",'w','utf-8')
+			
+	for arg in sys.argv:
+		
+		if not arg.endswith(".csv"):
+			continue
 
-print output
+		with open(arg) as f:
+			data_file = f.readlines()
 
-for line1 in data_file:
-	url = line1.split()[0].strip('"')
-	#print url
-	if len(url)>15:
-		data = get_content(url)
-		aaa = get_freq(data)[0:20]
-		tags = []
-		for zzz in aaa:
-			tags.append(zzz[0])
-		line = "\""+url+"\",\"" + " ".join(tags) + "\""
-		print line
-		fw.write(line + "\n")
+		if arg=="suur_eelnou.csv" or arg=="otsus.csv":
+			pos=0
+		else:
+			pos=1
 
-fw.close()
+		for line1 in data_file:
+			url = line1.split()[pos].strip('"')
+			#print url
+			if len(url)>30:
+				data = get_content(url)
+				aaa = get_freq(data)[0:20]
+				tags = []
+				for zzz in aaa:
+					tags.append(zzz[0])
+				line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
+				print line
+				fw.write(line + "\n")
+
+	fw.close()
 
 #pprint(words)
 
