@@ -1,12 +1,44 @@
-# Open Tartu (for Smart Citizens)
+# Open Tartu (for smart citizens)
 
-This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21-23 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/).
+This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21-23 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/). We have also submitted our project at [Ajujaht](http://www.ajujaht.ee/ajujahile-esitati-309-ideed/) competition under social entrepreneurship category.
 
-In a nutshell, this is a project to scrape information from Tartu City document registry and present it in a usable manner for citizens as well as city officials themselves. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process itself, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
+## In a nutshell
+
+We scrape information from Tartu City document registry and present it in a usable manner for citizens as well as city officials. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
 
 [Check out the test application](https://infoaed.github.io/start.html) or [dig into data the scripts scraped for us](https://github.com/infoaed/opentartu/tree/master/kraabe).
 
 Or see our [final presentation at the hackathon](http://tehnika.postimees.ee/3883093/vaata-uuesti-garage48-open-big-data-2016-arendusnadalavahetuse-finaal) (starts ~52:15).
+
+## Current pitch for general interest
+
+Ever tried to get information about what your local municipality does in your district? Bumped into piles of documents in small letters full of legal gibberish and stopped after hours of digging, realizing you'd better call your local community activist to take five minute look and tell you what's it all about?
+
+We have an alternative solution for you now!
+
+We let our helpful robots dig into document registry of your local municipality and visualize the decision process for you to make sense at first glance.
+
+We provide you with personalized view of document flow based on your place of residence.
+
+We show you in what department was the process started, what commissions and institutions the document has passed, what changes have been made to it and what is its current status as well as predictable path in the future.
+
+We add special tags about persons responsible, topics involved, money at stake or legal paragraphs referred to in those documents to make it easier to grasp at once.
+
+We provide you with statistics, infographics, word clouds and meaningful search engine powered by our helpful robots with natural language processing skills.
+
+We let you ask questions and post comments about the things passing the corridors of power, never mind about sharing your experience in your favorite social network.
+
+And as a true reality check for the people responsible for the future of your municipality — we even let you vote on the very same issues that your local government and council votes on.
+
+This is an e-democracy tool specially designed for use in local governments that empowers both the citizens as well as people working at municipal offices.
+
+We start from Tartu, the most advanced city in Estonia when it comes to open government. Tartu was the first city to experiment with citizen budget. Tartu is the only city having hosted an open governance committee, that agreed on the special plan of action already in 2014. Tartu has promised to be the pioneer of smart city solutions as well as open data.
+
+We make full use of Estonian digital infrastructure, apply the principles of open data, make use of best practices and emerging international standards in formalizing municipal decision processes and build a true e-democracy system for 21st century.
+
+We will make Tartu a role model for the rest of the world: an open city for smart citizens.
+
+And what will happen in Tartu will not stay in Tartu, we can tell you that for sure!
 
 ## Original pitch
 
