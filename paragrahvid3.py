@@ -22,6 +22,8 @@ BF = 25
 SLV = 0.8
 SLV_YS = 0.95
 
+LAWNAMES = ("seadus", "seadustik")
+
 seadused = {}
 
 def get_para_at(blob, pos):
@@ -46,7 +48,20 @@ def in_dict(nimi):
 	else:
 		return 0, None
 
+def lyhike_nimi(cur, add_len):
+	for nimi in LAWNAMES:
+		if cur.endswith(nimi) and len(cur) <= len(nimi) + add_len:
+			return True
+	return False
+	
 def ins_or_add(start, end, data, paras):
+	while True:
+		lastword = data[start:end].split()[-1]
+		#print(lastword)
+		if lastword.endswith(LAWNAMES):
+			break
+		end = end - 1
+
 	chunk=data[start:end]
 	if start-BF<0:
 		newstart=0
@@ -58,6 +73,8 @@ def ins_or_add(start, end, data, paras):
 	else:
 		newend=end+BF
 	post=data[end:newend]
+
+	#print(pre, chunk, post)
 	
 	closest = 0, None, None
 	
@@ -67,12 +84,12 @@ def ins_or_add(start, end, data, paras):
 		variant = jupid[i:len(jupid)]
 		cur = " ".join(variant)
 		#print(cur)
-		if cur == "seadus" or cur == "seadustik":
+		if cur in LAWNAMES:
 			break
 		simil = in_dict(cur)
 		if simil[0] > closest[0]:
 			#print(i, len(jupid), variant)
-			if i == 1: # viimane sõna, st ühesõnalised seadusenimed
+			if i == 1 or lyhike_nimi(cur, 4): # viimane sõna, st ühesõnalised seadusenimed
 				#print(variant)
 				if simil[0] > SLV_YS:
 					closest = simil[0], simil[1], cur
@@ -94,9 +111,12 @@ def ins_or_add(start, end, data, paras):
 
 def get_paras(data):
 	paras={}
-	pat = re.compile(r'[^;.§]+(seadustik|seadus)')
+	pat = re.compile(r'[^;.§]+seadus\w*')
 	for m in re.finditer(pat, data):
-		ins_or_add(m.start(), m.end(), data, paras)
+		res = analyze(m.group(0).split()[-1])
+		#print(res[0]['analysis'][0])
+		if res[0]['analysis'][0]['lemma'].endswith(LAWNAMES):
+			ins_or_add(m.start(), m.end(), data, paras)
 	return sorted(paras.items(), key=lambda x:x[1], reverse=True)
 			
 def dl_doc(url):
@@ -134,7 +154,7 @@ if len(sys.argv) >= 2:
 
 	#print(seadused)
 	
-	fw = codecs.open("paragrahvid.csv",'w','utf-8')
+	#fw = codecs.open("paragrahvid.csv",'w','utf-8')
 	
 	for arg in sys.argv:
 		
@@ -150,8 +170,10 @@ if len(sys.argv) >= 2:
 			pos=1
 
 		for line1 in data_file:
-			url = line1.split()[pos].strip('"')
-			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/viited/VOLM2015062500086"
+			#url = line1.split()[pos].strip('"')
+			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/gpunid/GC2257DD200719704C2257CC5001C07BC?OpenDocument"
+			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/gpunid/GC2257ED20030C63DC2257E70001D7F80?OpenDocument"
+			url = "http://info.raad.tartu.ee/webaktid.nsf/gpunid/GC2257ED20030C63DC2257C7C00495225"
 			#print(url)
 			if len(url)>30:
 				data = get_content(url)
@@ -167,10 +189,10 @@ if len(sys.argv) >= 2:
 							tags.append(zzz[0])
 						line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
 						print("\""+line.split("/")[-1])
-						fw.write(line + "\n")
-			#sys.exit(1)
+						#fw.write(line + "\n")
+			sys.exit(1)
 
-	fw.close()
+	#fw.close()
 
 #pprint(words)
 
