@@ -18,6 +18,8 @@ IGN_TYYP = ['J', 'Z', 'D', 'P'] # sidesõna, lausemärk, operaator, küsisõna
 IGN_WORD = ["olema"]
 
 BF = 25
+SLV = 0.8
+SLV_YS = 0.95
 
 seadused = {}
 
@@ -38,7 +40,7 @@ def in_dict(nimi):
 		seq = SequenceMatcher(None, s, nimi)
 		if seq.ratio() > highest[0]:
 			highest = seq.ratio(), seadused[s]
-	if highest[0] > 0.6:
+	if highest[0] > SLV:
 		return highest
 	else:
 		return 0, None
@@ -64,13 +66,23 @@ def ins_or_add(start, end, data, paras):
 		variant = jupid[len(jupid)-i:len(jupid)]
 		cur = " ".join(variant)
 		#print(cur)
+		if cur == "seadus" or cur == "seadustik":
+			break
 		simil = in_dict(cur)
 		if simil[0] > closest[0]:
-			closest = simil[0], simil[1], cur
-			if closest[0] == 1:
-				break
+			#print(i, len(jupid), variant)
+			if i == 1: # viimane sõna, st ühesõnalised seadusenimed
+				#print(variant)
+				if simil[0] > SLV_YS:
+					closest = simil[0], simil[1], cur
+					if closest[0] == 1:
+						break
+			else: # mitmesõnalistega on kõik tavaline
+				closest = simil[0], simil[1], cur
+				if closest[0] == 1:
+					break
 	
-	if closest[0] > 0.6:
+	if closest[0] > SLV:
 		if closest[1] in paras.keys():
 			paras[closest[1]] = paras[closest[1]] + 1
 		else:
@@ -147,7 +159,7 @@ if len(sys.argv) >= 2:
 						for zzz in parad:
 							tags.append(zzz[0])
 						line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
-						print(line.split("/")[-1])
+						print("\""+line.split("/")[-1])
 						fw.write(line + "\n")
 
 	fw.close()
