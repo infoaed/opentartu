@@ -7,6 +7,7 @@ from pprint import pprint
 
 from urllib.request import urlopen
 from urllib.parse import unquote
+from urllib.error import URLError
 
 from difflib import SequenceMatcher
 
@@ -99,8 +100,13 @@ def get_paras(data):
 	return sorted(paras.items(), key=lambda x:x[1], reverse=True)
 			
 def dl_doc(url):
-	resource = urlopen(url)
-	content =  resource.read().decode(resource.headers.get_content_charset())	
+	while True:
+		try:
+			resource = urlopen(url)
+			content =  resource.read().decode(resource.headers.get_content_charset())	
+			break
+		except URLError as e:
+			print(e)
 	return content
 
 def decode_html(data):
