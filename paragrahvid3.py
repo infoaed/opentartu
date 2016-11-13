@@ -63,7 +63,7 @@ def ins_or_add(start, end, data, paras):
 	jupid=chunk.split()
 	#print(">>>"+" ".join(jupid))
 	for i in range(0, len(jupid)):
-		variant = jupid[len(jupid)-i:len(jupid)]
+		variant = jupid[i:len(jupid)]
 		cur = " ".join(variant)
 		#print(cur)
 		if cur == "seadus" or cur == "seadustik":
@@ -145,6 +145,7 @@ if len(sys.argv) >= 2:
 
 		for line1 in data_file:
 			url = line1.split()[pos].strip('"')
+			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/viited/VOLM2015062500086"
 			#print(url)
 			if len(url)>30:
 				data = get_content(url)
@@ -161,6 +162,7 @@ if len(sys.argv) >= 2:
 						line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
 						print("\""+line.split("/")[-1])
 						fw.write(line + "\n")
+			#sys.exit(1)
 
 	fw.close()
 
