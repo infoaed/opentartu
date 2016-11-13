@@ -190,7 +190,7 @@ if len(sys.argv) >= 2:
 						line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
 						print("\""+line.split("/")[-1])
 						fw.write(line + "\n")
-			sys.exit(1)
+			#sys.exit(1)
 
 	fw.close()
 
