@@ -154,7 +154,7 @@ if len(sys.argv) >= 2:
 
 	#print(seadused)
 	
-	#fw = codecs.open("paragrahvid.csv",'w','utf-8')
+	fw = codecs.open("paragrahvid.csv",'w','utf-8')
 	
 	for arg in sys.argv:
 		
@@ -170,10 +170,10 @@ if len(sys.argv) >= 2:
 			pos=1
 
 		for line1 in data_file:
-			#url = line1.split()[pos].strip('"')
+			url = line1.split()[pos].strip('"')
 			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/gpunid/GC2257DD200719704C2257CC5001C07BC?OpenDocument"
 			#url = "http://info.raad.tartu.ee/webaktid.nsf/web/gpunid/GC2257ED20030C63DC2257E70001D7F80?OpenDocument"
-			url = "http://info.raad.tartu.ee/webaktid.nsf/gpunid/GC2257ED20030C63DC2257C7C00495225"
+			#url = "http://info.raad.tartu.ee/webaktid.nsf/gpunid/GC2257ED20030C63DC2257C7C00495225"
 			#print(url)
 			if len(url)>30:
 				data = get_content(url)
@@ -189,10 +189,10 @@ if len(sys.argv) >= 2:
 							tags.append(zzz[0])
 						line = "\""+url+"\"\t\"" + " ".join(tags) + "\""
 						print("\""+line.split("/")[-1])
-						#fw.write(line + "\n")
+						fw.write(line + "\n")
 			sys.exit(1)
 
-	#fw.close()
+	fw.close()
 
 #pprint(words)
 
