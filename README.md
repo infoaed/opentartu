@@ -8,7 +8,7 @@ We scrape information from Tartu City document registry and present it in a usab
 
 [Check out the test application](https://infoaed.github.io/start.html) or [dig into data the scripts scraped for us](https://github.com/infoaed/opentartu/tree/master/kraabe).
 
-[![This is how decision processes are visualized by our pre-alpha prototype](https://github.com/infoaed/opentartu/blob/master/disain/opentartu-cycle.jpg)](http://tartuvabakond.dorpatensis.ee/index.py?id=VOLM2014042400014)
+[![This is how decision processes are visualized by our pre-alpha prototype](https://github.com/infoaed/opentartu/blob/master/disain/opentartu-cycle.png)](http://tartuvabakond.dorpatensis.ee/index.py?id=VOLM2014042400014)
 
 Or see our [final presentation at the hackathon](http://tehnika.postimees.ee/3883093/vaata-uuesti-garage48-open-big-data-2016-arendusnadalavahetuse-finaal) (starts ~52:15).
 
