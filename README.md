@@ -1,12 +1,14 @@
 # Open Tartu (for smart citizens)
 
-This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21-23 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/). We have also submitted our project at [Ajujaht](http://www.ajujaht.ee/ajujahile-esitati-309-ideed/) competition under social entrepreneurship category.
+This a project that was pitched at [Garage48 Open & Big Data Hackathon](http://garage48.org/events/openbigdata) in Tartu October 21st to 23rd 2016 and received a second runner-up prize and special pass to [Latitude59](http://latitude59.ee/). We have also submitted our project at [Ajujaht](http://www.ajujaht.ee/ajujahile-esitati-309-ideed/) competition under social entrepreneurship category, where we got into second round, but were not chosen to be among final 30. However, we had better luck in [Ultrahack](https://ultrahack.org/ultrahack2016) yearly tournament in Finland November 25th to 27th, where our side project [2min4city](https://docs.google.com/document/d/1jhVrLn55dRMgzRUK1ZVgoJqRBDxGwh8p6Yu1GRYagsI) got into finals and was one of three best projects on #hackthenation track.
 
 ## In a nutshell
 
 We scrape information from Tartu City document registry and present it in a usable manner for citizens as well as city officials. This is already a lot, but as a special feature we give citizens an opportunity to participate in the decision process, commenting on documents and meetings in various phases and give a feedback vote on the results. It's a digital tool to make democracy great again and although we built it specially for Tartu, you can use it in any city or municipality with similar organizational structure.
 
 [Check out the test application](https://infoaed.github.io/start.html) or [dig into data the scripts scraped for us](https://github.com/infoaed/opentartu/tree/master/kraabe).
+
+[![This is how decision processes are visualized by our pre-alpha prototype](https://github.com/infoaed/opentartu/blob/master/disain/opentartu-cycle.jpg)](http://tartuvabakond.dorpatensis.ee/index.py?id=VOLM2014042400014)
 
 Or see our [final presentation at the hackathon](http://tehnika.postimees.ee/3883093/vaata-uuesti-garage48-open-big-data-2016-arendusnadalavahetuse-finaal) (starts ~52:15).
 
